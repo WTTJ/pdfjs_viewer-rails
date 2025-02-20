@@ -29,6 +29,7 @@ See https://github.com/adobe-type-tools/cmap-resources
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="google" content="notranslate">
     <%= render "pdfjs_viewer/viewer/head", title: title, pdf_url: pdf_url %>
+    <%= render "pdfjs_viewer/viewer/extra_head", local_assigns %>
   </head>
 
   <body tabindex="1" class="loadingInProgress" id="pdfjs_viewer-<%= style %>">
@@ -258,12 +259,12 @@ See https://github.com/adobe-type-tools/cmap-resources
                 <div id="editorModeSeparator" class="verticalToolbarSeparator"></div>
 
                 <div class="toolbarHorizontalGroup hiddenMediumView">
-                  <button id="printButton" class="toolbarButton" type="button" title="Print" tabindex="0" data-l10n-id="pdfjs-print-button">
-                    <span data-l10n-id="pdfjs-print-button-label">Print</span>
-                  </button>
-
                   <button id="downloadButton" class="toolbarButton" type="button" title="Save" tabindex="0" data-l10n-id="pdfjs-save-button">
                     <span data-l10n-id="pdfjs-save-button-label">Save</span>
+                  </button>
+
+                  <button id="printButton" class="toolbarButton" type="button" title="Print" tabindex="0" data-l10n-id="pdfjs-print-button">
+                    <span data-l10n-id="pdfjs-print-button-label">Print</span>
                   </button>
                 </div>
 
