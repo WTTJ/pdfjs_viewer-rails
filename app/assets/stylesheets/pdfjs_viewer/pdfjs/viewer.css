@@ -3340,7 +3340,7 @@
   content:"";
   width:100%;
   height:100%;
-  background:url("images/loading-icon.gif") center no-repeat;
+  background:var(--loading-icon-gif) center no-repeat;
   display:none;
   transition-property:display;
   transition-delay:var(--loading-icon-delay);
@@ -3434,6 +3434,7 @@
   --dialog-button-hover-bg-color:rgb(12 12 13 / 0.3);
 
   --loading-icon:url(/pdfjs/web/images/loading.svg);
+  --loading-icon-gif:url(/pdfjs/web/images/loading-icon.gif);
   --treeitem-expanded-icon:url(/pdfjs/web/images/treeitem-expanded.svg);
   --treeitem-collapsed-icon:url(/pdfjs/web/images/treeitem-collapsed.svg);
   --toolbarButton-editorFreeText-icon:url(/pdfjs/web/images/toolbarButton-editorFreeText.svg);
